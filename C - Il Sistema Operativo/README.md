@@ -1,3 +1,20 @@
+## C - Il Sistema Operativo
+
+---
+### Esercitazioni
+- Creazione, rinomina e gestione di file e cartelle  
+- Configurazione di base di un sistema operativo  
+ES01 - Lavorare con il S.O. Windows
+ES02 - Lavorare con Esplora file
+L4 - Conosciamo i sistemi operativi
+L5 - Usiamo Windows
+L6 - Usiamo Ubuntu
+Principali funzioni di un sistema operativo
+Comandi Windows 
+Comandi Rapidi
+
+---
+### Teoria
 **1. Introduzione**
 - [1.1 Cos'è un sistema operativo](<1.1 Cos'è un sistema operativo.md>)  
 - [1.2 Funzioni principali di un sistema operativo](<1.2 Funzioni principali di un sistema operativo.md>)
@@ -31,16 +48,4 @@
 - [6.1 Interfaccia da linea di comando](<2.3 interfaccia da linea di comando.md>)
 
 --- 
-
-**Esercizi pratici:**  
-- Creazione, rinomina e gestione di file e cartelle  
-- Configurazione di base di un sistema operativo  
-
-ES01 - Lavorare con il S.O. Windows
-ES02 - Lavorare con Esplora file
-L4 - Conosciamo i sistemi operativi
-L5 - Usiamo Windows
-L6 - Usiamo Ubuntu
-Principali funzioni di un sistema operativo
-Comandi Windows 
-Comandi Rapidi
+[INDICE](../README.md) 
