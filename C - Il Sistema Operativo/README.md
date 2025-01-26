@@ -28,26 +28,26 @@ Comandi Rapidi
 - [2.3 Tasti di scelta rapida](<2.3 Tasti di scelta rapida.md>)
 - [2.4 Quiz di autovalutazione](<2.4 Quiz di autovalutazione.md>)
 
-**3. Esplora File**
-- [3.1 Esplora File](<3.1 Esplora File.md>)
-- [3.2 Il File System](<3.2 Il File System.md>)
-- [3.3 Gestione file e cartelle](<3.3 Gestione file e cartelle.md>)
+**3. Personalizzazione e gestione del S.O.**
+- [3.1 Personalizzazione e configurazione del sistema](<3.1 Personalizzazione e configurazione del sistema.md>)  
+- [3.2 Installazione e disinstallazione di software](<3.2 Installazione e disinstallazione di software.md>)  
+- [3.3 Il software portabile](<3.3 Il software portabile.md>) 
+- [3.4 La gestione delle attività di Windows](<3.4 La gestione delle attività di Windows.md>)
+- [3.5 Esercitazione1](<3.5 Esercitazione1.md>) 
+- [3.6 Esercitazione2](<3.6 Esercitazione2.md>) 
 
-**4. Personalizzazione e gestione del S.O.**
-- [5.1 Personalizzazione e configurazione del sistema](<1.9 Personalizzazione e configurazione del sistema.md>)  
-- [5.1 Esercitazione](<5.1 esercitazione.md>)
-- [5.2 Installazione e disinstallazione di software](<5.2 Installazione e disinstallazione di software.md>)  
-- [5.2 Esercitazione](<5.2 Esercitazione.md>) 
-- [5.3 Il software portabile](<5.3 Il software portabile.md>) 
-- [5.3 Esercitazione](<5.3 Esercitazione.md>) 
-- [5.4 La gestione delle attività di Windows](<5.4 La gestione delle attività di Windows.md>)
+
+**4. Esplora File**
+- [4.1 Esplora File](<3.1 Esplora File.md>)
+- [4.2 Il File System](<3.2 Il File System.md>)
 - [5.5 Cartelle di sistema](<5.5 Cartelle di sistema.md>)
+- [4.3 Gestione file e cartelle](<3.3 Gestione file e cartelle.md>)
 
-**4. Utenti**
-- [4.1 Utenti](<4.1 Utenti.md>)
+**5. Utenti**
+- [5.1 Utenti](<5.1 Utenti.md>)
 
 **6. CLI (Interfaccia da linea di comando)**
-- [6.1 Interfaccia da linea di comando](<2.3 interfaccia da linea di comando.md>)
+- [6.1 Interfaccia da linea di comando](<6.1 interfaccia da linea di comando.md>)
 
 --- 
 [INDICE](../README.md) 
