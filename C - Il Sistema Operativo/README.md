@@ -37,14 +37,41 @@ Comandi Rapidi
 - [3.6 Esercitazione2](<3.6 Esercitazione2.md>) 
 
 
-**4. Esplora File**
+**4. Esplora File e il file system**
 - [4.1 Esplora File](<3.1 Esplora File.md>)
 - [4.2 Il File System](<3.2 Il File System.md>)
 - [5.5 Cartelle di sistema](<5.5 Cartelle di sistema.md>)
+- Personalizzazione delle directory di sistema
 - [4.3 Gestione file e cartelle](<3.3 Gestione file e cartelle.md>)
+- Condivisione e permessi delle cartelle
+- Percorsi assoluti e relativi
+- Uso dei tasti di scelta rapida per navigare velocemente
+- Ricerca di file e cartelle
+- Personalizzazione di Esplora File
+- Dischi e dispositivi di memorizzazione
+- Organizzazione file e cartelle, collegamenti
+- Rimozione sicura dispositivi
+- estensione dei file 
+- File compressi
+- Le risorse di rete
+- Esercitazioni pratiche su Esplora File
+Gli elementi della finestra
+menu contestuale
+Proprietà dell’HD, strumenti
+modifica delle visualizzazione
+visualizzazione estensione per tutti i file
+Opzioni cartella e ricerca 
+Operazioni con i file, CTRL, SHIFT, copia sposta, formatta elimina, il cestino, 
+Drag and Drop + CTRL -> copia
+Drag and Drop + Shift -> sposta
+Il comando Annulla e il comando ripeti
 
-**5. Utenti**
+
+**5. Utenti e permessi**
 - [5.1 Utenti](<5.1 Utenti.md>)
+- Differenze tra utente normale e amministratore
+- Gestione dei profili utente
+- Personalizzazione dell'ambiente di lavoro per ogni utente
 
 **6. CLI (Interfaccia da linea di comando)**
 - [6.1 Interfaccia da linea di comando](<6.1 interfaccia da linea di comando.md>)
