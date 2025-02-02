@@ -38,22 +38,23 @@ Comandi Rapidi
 
 
 **4. Esplora File e il file system**
-- [4.1 Esplora File](<3.1 Esplora File.md>)
-- [4.2 Il File System](<3.2 Il File System.md>)
-- [5.5 Cartelle di sistema](<5.5 Cartelle di sistema.md>)
-- Personalizzazione delle directory di sistema
-- [4.3 Gestione file e cartelle](<3.3 Gestione file e cartelle.md>)
-- Condivisione e permessi delle cartelle
+- [4.1 Esplora File](<4.1 Esplora File2.md>)
+- [4.2 Il File System](<4.2 Il File System2.md>)
+- [4.2 Formattazione, partizione e altre operazioni sui dischi](<4.2 Formattazione, partizione e altre operazioni sui dischi.md>)
+- [4.3 Cartelle di sistema](<4.3 Cartelle di sistema2.md>)
+- [4.4 Gestione file e cartelle](<4.3 Gestione file e cartelle2.md>)
+- [4.5 Esercizi su file e cartelle](<4.5 Esercizi su file e cartelle2.md>)
+- [4.6 Uso dei tasti di scelta rapida](<4.6 Uso dei tasti di scelta rapida.md>)
+- [4.7 Estensione dei file, tabella di associazione file](<4.7 Estensione dei file, tabella di associazione file.md>)
+- [4.8 File compressi](<4.8 File compressi.md>)
+- [4.9 Le risorse di rete](<4.9 Le risorse di rete.md>)
 - Percorsi assoluti e relativi
-- Uso dei tasti di scelta rapida per navigare velocemente
+- Condivisione e permessi delle cartelle
 - Ricerca di file e cartelle
 - Personalizzazione di Esplora File
 - Dischi e dispositivi di memorizzazione
 - Organizzazione file e cartelle, collegamenti
 - Rimozione sicura dispositivi
-- estensione dei file 
-- File compressi
-- Le risorse di rete
 - Esercitazioni pratiche su Esplora File
 Gli elementi della finestra
 menu contestuale
