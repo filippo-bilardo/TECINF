@@ -1,4 +1,4 @@
-## C - Il Sistema Operativo
+## F - Algoritmi e programmazione
 
 ---
 ### Esercitazioni
