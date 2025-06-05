@@ -76,6 +76,9 @@ Il comando Annulla e il comando ripeti
 
 **6. CLI (Interfaccia da linea di comando)**
 - [6.1 Interfaccia da linea di comando](<6.1 interfaccia da linea di comando.md>)
-
+---
+### Risorse Utili
+- [ECDL - modulo 7](https://www.fabiofrittoli.it/wp-content/uploads/2020/12/concetti-di-navigazione-in-rete.pdf)
+- [ECDL](https://www.fabiofrittoli.it/ecdl/dispense-ecdl/)
 --- 
 [INDICE](../README.md) 
