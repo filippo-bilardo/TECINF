@@ -7,18 +7,18 @@
 ---
 ### Teoria
 **1. Introduzione**
-- [1.1 Gli algoritmi](<1.1 Gli algoritmi.md>)  
-- [1.2 La programmazione](<1.2 La programmazione.md>)
-- [1.3 L'ora del codice](<1.3 L'ora del codice.md>)
-- [1.4 La programmazione visuale](<1.4 La programmazione visuale.md>)
-- [1.5 Cosa è Scratch](<1.5 Cosa è Scratch.md>)
-- [1.6 Avvio di Scratch e la sua interfaccia](<1.6 Avvio di Scratch e la sua interfaccia.md>)
-- [1.7 Primi passi con Scratch](<1.7 Primi passi con Scratch.md>)
+- [1.1 Gli algoritmi](<vari/1.1 Gli algoritmi.md>)  
+- [1.2 La programmazione](<vari/1.2 La programmazione.md>)
+- [1.3 L'ora del codice](<vari/1.3 L'ora del codice.md>)
+- [1.4 La programmazione visuale](<vari/1.4 La programmazione visuale.md>)
+- [1.5 Cosa è Scratch](<vari/1.5 Cosa è Scratch.md>)
+- [1.6 Avvio di Scratch e la sua interfaccia](<vari/1.6 Avvio di Scratch e la sua interfaccia.md>)
+- [1.7 Primi passi con Scratch](<vari/1.7 Primi passi con Scratch.md>)
 
-- [2.1 Istruzioni e sequenze](<2.1 Istruzioni e sequenze.md>)
-- [2.2 Progetto creare una storia animata](<2.2 Progetto creare una storia animata.md>)
+- [2.1 Istruzioni e sequenze](<vari/2.1 Istruzioni e sequenze.md>)
+- [2.2 Progetto creare una storia animata](<vari/2.2 Progetto creare una storia animata.md>)
 
-- [Frogger](Frogger.md)
+- [Frogger](<vari/Frogger.md>)
 - [Il gioco Frogger con Scratch](https://github.com/filippo-bilardo/Il-gioco-Frogger-con-Scratch/blob/main/README.md)
 ---
 
