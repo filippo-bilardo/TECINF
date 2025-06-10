@@ -19,6 +19,7 @@
 - [2.2 Progetto creare una storia animata](<2.2 Progetto creare una storia animata.md>)
 
 - [Frogger](Frogger.md)
+- [Il gioco Frogger con Scratch](https://github.com/filippo-bilardo/Il-gioco-Frogger-con-Scratch/blob/main/README.md)
 ---
 
 **Parte 2: Fondamenti di programmazione**
