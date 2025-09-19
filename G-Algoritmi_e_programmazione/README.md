@@ -22,6 +22,11 @@
 - [Il gioco Frogger con Scratch](https://github.com/filippo-bilardo/Il-gioco-Frogger-con-Scratch/blob/main/README.md)
 ---
 
+
+---
+[INDICE](<../README.md>)
+
+
 **Parte 2: Fondamenti di programmazione**
 
 

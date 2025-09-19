@@ -3,8 +3,8 @@ Appunti per il corso **Tecnologie Informatiche**
 
 ---
 ## Programma del corso
-- A - Concetti base dell’informatica**
-- B - Architettura e componenti di un computer**  
+- [A - Concetti base dell’informatica](<A-Concetti_base_dell’informatica/README.md>)
+- [B - Architettura e componenti di un computer](<B-Architettura_e_componenti_di_un_computer/README.md>)
 - [C - Il Sistema Operativo](<C-Il_Sistema_Operativo/README.md>)  
 - [D - La rete Internet](<D-La_rete_Internet/README.md>)  
 - [E - Multimedialità, ipertesti e presentazioni](<E-Multimedialità,_ipertesti_e_presentazioni/README.md>)
