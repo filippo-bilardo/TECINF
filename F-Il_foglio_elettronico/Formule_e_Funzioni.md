@@ -13,16 +13,165 @@
 10. [Funzioni di Ricerca](#funzioni-di-ricerca)
 11. [Funzioni Specifiche di Google Fogli](#funzioni-specifiche-google-fogli)
 12. [Esempi Pratici](#esempi-pratici)
+13. [Esercitazioni per Studenti](#esercitazioni-per-studenti)
 
 ---
 
 ## Introduzione
 
-Le **formule** e le **funzioni** sono strumenti fondamentali nei fogli di calcolo che permettono di automatizzare calcoli, analizzare dati e prendere decisioni basate su informazioni.
+### Cosa sono i Fogli di Calcolo
+
+I **fogli di calcolo elettronici** (spreadsheet) sono applicazioni software progettate per organizzare, analizzare e memorizzare dati in formato tabellare. Nati negli anni '70, hanno rivoluzionato il modo in cui aziende, professionisti e studenti gestiscono informazioni numeriche e testuali.
+
+#### Storia e Evoluzione
+
+- **1979**: VisiCalc, il primo foglio elettronico per computer personali
+- **1983**: Lotus 1-2-3, che dominò gli anni '80
+- **1985**: Excel di Microsoft, che divenne lo standard industriale
+- **2006**: Google Fogli (Google Sheets), portando il cloud computing ai fogli di calcolo
+
+#### Caratteristiche Fondamentali
+
+Un foglio di calcolo si compone di:
+
+1. **Celle**: l'unità base dove si inseriscono dati
+2. **Righe**: identificate da numeri (1, 2, 3...)
+3. **Colonne**: identificate da lettere (A, B, C...)
+4. **Fogli**: un documento può contenere più fogli (tab)
+5. **Cartella di lavoro**: il file completo contenente tutti i fogli
+
+### Il Potere delle Formule e delle Funzioni
+
+Le **formule** e le **funzioni** rappresentano il vero potere dei fogli di calcolo, trasformandoli da semplici tabelle in potenti strumenti di analisi e automazione. Senza formule, un foglio di calcolo sarebbe solo una griglia per inserire dati manualmente; con le formule, diventa uno strumento dinamico e intelligente.
+
+#### Vantaggi dell'Uso di Formule
+
+1. **Automazione**: Calcoli complessi eseguiti automaticamente
+2. **Precisione**: Eliminazione degli errori di calcolo manuale
+3. **Aggiornamento dinamico**: I risultati si aggiornano automaticamente quando cambiano i dati
+4. **Scalabilità**: Una formula può essere applicata a migliaia di celle
+5. **Riproducibilità**: Le stesse formule possono essere riutilizzate in contesti diversi
+6. **Trasparenza**: La logica di calcolo è visibile e verificabile
 
 ### Differenza tra Formula e Funzione
-- **Formula**: un'espressione matematica che inizia con il simbolo `=` e può contenere valori, riferimenti di cella e operatori.
-- **Funzione**: un comando predefinito che esegue calcoli specifici (es. SOMMA, MEDIA).
+
+#### Formula
+Una **formula** è un'espressione matematica personalizzata che inizia con il simbolo `=` e può contenere:
+- Valori numerici diretti (es. `5`, `3.14`)
+- Riferimenti di cella (es. `A1`, `B2`)
+- Operatori matematici (es. `+`, `-`, `*`, `/`)
+- Funzioni predefinite
+
+**Esempio di formula semplice:**
+```
+=A1*B1+C1
+```
+Questa formula moltiplica il valore di A1 per B1 e aggiunge il valore di C1.
+
+#### Funzione
+Una **funzione** è un comando predefinito che esegue calcoli specifici o operazioni sui dati. Le funzioni:
+- Hanno un nome specifico (es. SOMMA, MEDIA, SE)
+- Accettano argomenti (input) tra parentesi
+- Restituiscono un risultato
+- Sono ottimizzate per operazioni comuni
+
+**Esempio di funzione:**
+```
+=SOMMA(A1:A10)
+```
+Questa funzione somma tutti i valori dall'intervallo A1 a A10.
+
+#### Formula con Funzioni
+Spesso, le formule più potenti combinano funzioni multiple:
+```
+=SE(MEDIA(A1:A10)>50;"Superato";"Non superato")
+```
+
+### Tipi di Dati nei Fogli di Calcolo
+
+Prima di lavorare con formule, è essenziale comprendere i tipi di dati:
+
+#### 1. Numeri
+- **Interi**: 1, 42, -5
+- **Decimali**: 3.14, -2.5 (nota: in Italia si usa la virgola, ma nelle formule si usa il punto)
+- **Percentuali**: 50% (memorizzato come 0.5)
+- **Valuta**: €10,00
+- **Notazione scientifica**: 1.5E+10 (15.000.000.000)
+
+#### 2. Testo (Stringhe)
+- Qualsiasi sequenza di caratteri
+- Deve essere racchiuso tra virgolette nelle formule: `"Ciao"`
+- Può contenere numeri che non devono essere calcolati (es. codici postali)
+
+#### 3. Date e Ore
+- Le date sono memorizzate come numeri (giorni dal 30/12/1899)
+- Le ore sono frazioni di giorno
+- Formato visualizzato: 21/01/2026 oppure 14:30:00
+
+#### 4. Booleani
+- VERO o FALSO
+- Utilizzati nelle funzioni logiche
+- VERO = 1, FALSO = 0 nei calcoli
+
+#### 5. Errori
+- `#DIV/0!`: divisione per zero
+- `#N/D`: valore non disponibile
+- `#NOME?`: nome funzione non riconosciuto
+- Altri errori che vedremo in dettaglio
+
+### Ordine delle Operazioni (Precedenza)
+
+Quando si scrivono formule complesse, è fondamentale conoscere l'ordine in cui le operazioni vengono eseguite:
+
+1. **Parentesi** `()`
+2. **Elevamento a potenza** `^`
+3. **Moltiplicazione e Divisione** `*` `/` (da sinistra a destra)
+4. **Addizione e Sottrazione** `+` `-` (da sinistra a destra)
+5. **Operatori di confronto** `=`, `>`, `<`, ecc.
+6. **Concatenazione** `&`
+
+**Esempio:**
+```
+=2+3*4        // Risultato: 14 (prima 3*4=12, poi 2+12=14)
+=(2+3)*4      // Risultato: 20 (prima 2+3=5, poi 5*4=20)
+=10/2*5       // Risultato: 25 (da sinistra: 10/2=5, poi 5*5=25)
+```
+
+### Perché Imparare le Formule è Importante
+
+#### Nel Mondo del Lavoro
+- **Finanza**: Analisi di bilanci, previsioni, calcoli di interessi
+- **Marketing**: Analisi ROI, statistiche campagne, segmentazione clienti
+- **Risorse Umane**: Calcolo stipendi, analisi presenze, valutazione performance
+- **Vendite**: Report vendite, analisi trend, gestione inventario
+- **Ricerca**: Elaborazione dati statistici, analisi risultati
+
+#### Competenze Trasversali
+Padroneggiare i fogli di calcolo sviluppa:
+- **Pensiero logico**: Scomposizione problemi complessi
+- **Attenzione ai dettagli**: Precisione nei riferimenti
+- **Problem solving**: Trovare soluzioni creative
+- **Efficienza**: Automatizzare compiti ripetitivi
+
+### Approccio Didattico di questa Guida
+
+Questa guida segue un percorso progressivo:
+
+1. **Fondamenti**: Concetti base e sintassi
+2. **Funzioni Base**: Operazioni matematiche e statistiche semplici
+3. **Funzioni Intermedie**: Logica condizionale e manipolazione testo
+4. **Funzioni Avanzate**: Ricerca dati e analisi complesse
+5. **Applicazioni Pratiche**: Esempi reali e casi d'uso
+6. **Esercitazioni**: Pratica guidata per consolidare le competenze
+
+### Convenzioni Utilizzate
+
+In questa guida:
+- Le **formule** sono scritte in formato codice: `=SOMMA(A1:A10)`
+- Gli **intervalli** usano i due punti: `A1:A10`
+- Il **separatore di argomenti** in Italia è il punto e virgola `;` (in inglese è la virgola `,`)
+- I **decimali** nelle formule usano la virgola: `3,14`
+- Il **testo** è sempre tra virgolette: `"Esempio"`
 
 ---
 
@@ -724,6 +873,578 @@ Usa formule personalizzate per evidenziare automaticamente dati importanti.
 | `#VALORE!` | Tipo di argomento sbagliato | Verifica i tipi di dati utilizzati |
 | `#NUM!` | Problema con un numero | Numero troppo grande o argomento non valido |
 | `#ERRORE!` | Errore generico | Controlla la sintassi della formula |
+
+---
+
+## Esercitazioni per Studenti
+
+Questa sezione contiene esercitazioni pratiche organizzate per livello di difficoltà. Ogni esercitazione include obiettivi, dati da utilizzare e compiti da svolgere.
+
+---
+
+### 📚 LIVELLO BASE
+
+#### Esercitazione 1: Primi Passi con le Formule
+
+**Obiettivi:**
+- Scrivere formule semplici con operatori aritmetici
+- Utilizzare riferimenti di cella
+- Creare somme e medie
+
+**Dati di partenza:**
+Crea un foglio con questi dati nella colonna A (Prodotto), B (Quantità), C (Prezzo Unitario):
+
+```
+A              B          C
+Mele           50         1,50
+Banane         30         2,00
+Arance         40         1,80
+Pere           25         2,50
+Kiwi           35         3,00
+```
+
+**Compiti:**
+1. Nella colonna D (Totale), calcola il totale per ogni prodotto (Quantità × Prezzo)
+2. Alla fine della colonna B, calcola la quantità totale di tutti i prodotti
+3. Alla fine della colonna D, calcola il valore totale di tutta la merce
+4. Calcola il prezzo medio dei prodotti
+5. Trova il prezzo più alto e quello più basso
+
+**Formule da utilizzare:** Operatori base, SOMMA, MEDIA, MAX, MIN
+
+---
+
+#### Esercitazione 2: Gestione Registro Voti
+
+**Obiettivi:**
+- Calcolare medie
+- Utilizzare funzioni statistiche
+- Applicare formule a più studenti
+
+**Dati di partenza:**
+Crea una tabella con studenti e voti:
+
+```
+A          B       C       D       E
+Studente   Voto1   Voto2   Voto3   Media
+Marco      7       8       7
+Anna       9       8       9
+Luca       6       7       6
+Giulia     8       9       8
+Paolo      5       6       5
+```
+
+**Compiti:**
+1. Calcola la media per ogni studente nella colonna E
+2. Aggiungi una riga finale con:
+   - Media della classe per ogni verifica
+   - Media generale della classe
+3. Trova il voto massimo e minimo per ogni verifica
+4. Conta quanti studenti hanno media >= 7
+5. Conta quanti studenti hanno media < 6
+
+**Formule da utilizzare:** MEDIA, MAX, MIN, CONTA.SE
+
+---
+
+#### Esercitazione 3: Riferimenti Assoluti e Relativi
+
+**Obiettivi:**
+- Comprendere la differenza tra riferimenti relativi e assoluti
+- Applicare il cambio valuta
+- Usare riferimenti misti
+
+**Dati di partenza:**
+```
+A              B          C (Tasso cambio: 1,10)
+Prodotto       Euro       Dollari
+Laptop         800
+Mouse          25
+Tastiera       45
+Monitor        350
+Webcam         80
+```
+
+**Compiti:**
+1. Inserisci il tasso di cambio Euro/Dollaro in una cella (es. D1 = 1,10)
+2. Nella colonna C, calcola il prezzo in dollari usando un riferimento assoluto al tasso
+3. Copia la formula verso il basso per tutti i prodotti
+4. Prova a cambiare il tasso di cambio e verifica che tutti i prezzi si aggiornino
+5. Aggiungi una colonna D per convertire da Dollari a Sterline (tasso 0,85)
+
+**Formule da utilizzare:** Riferimenti assoluti ($), moltiplicazione
+
+---
+
+### 📊 LIVELLO INTERMEDIO
+
+#### Esercitazione 4: Gestione Magazzino con Logica
+
+**Obiettivi:**
+- Utilizzare la funzione SE
+- Combinare funzioni logiche
+- Gestire soglie e avvisi
+
+**Dati di partenza:**
+```
+A          B          C          D              E
+Prodotto   Giacenza   Minimo     Stato         Azione
+Viti       150        100
+Bulloni    45         50
+Rondelle   200        80
+Dadi       30         40
+Chiodi     500        200
+```
+
+**Compiti:**
+1. Nella colonna D, mostra "OK" se la giacenza >= minimo, "BASSO" altrimenti
+2. Nella colonna E, mostra "RIORDINA" se lo stato è "BASSO", altrimenti lascia vuoto
+3. Aggiungi una colonna F "Priorità" con:
+   - "URGENTE" se giacenza < 50% del minimo
+   - "NORMALE" se giacenza < minimo ma >= 50% del minimo
+   - "OK" altrimenti
+4. Conta quanti prodotti sono in stato "BASSO"
+5. Calcola la percentuale di prodotti con giacenza sufficiente
+
+**Formule da utilizzare:** SE, SE annidati o PIÙ.SE, CONTA.SE, CONTA.VALORI
+
+---
+
+#### Esercitazione 5: Analisi Vendite Mensili
+
+**Obiettivi:**
+- Utilizzare SOMMA.SE e MEDIA.SE
+- Analizzare dati per categoria
+- Creare report riassuntivi
+
+**Dati di partenza:**
+```
+A          B          C          D
+Data       Categoria  Prodotto   Importo
+05/01      Elettr.    TV         450
+08/01      Casa       Divano     800
+12/01      Elettr.    Radio      80
+15/01      Sport      Bici       350
+18/01      Casa       Tavolo     250
+22/01      Sport      Palla      25
+25/01      Elettr.    PC         900
+28/01      Casa       Lampada    45
+```
+
+**Compiti:**
+1. Crea una tabella riassuntiva con:
+   - Totale vendite per categoria (Elettronica, Casa, Sport)
+   - Numero di vendite per categoria
+   - Importo medio per categoria
+2. Calcola il totale generale delle vendite
+3. Trova la vendita di importo massimo
+4. Conta quante vendite superano i 200€
+5. Calcola la percentuale di vendite per ogni categoria sul totale
+
+**Formule da utilizzare:** SOMMA.SE, CONTA.SE, MEDIA.SE, SOMMA, MAX
+
+---
+
+#### Esercitazione 6: Elaborazione Testi e Date
+
+**Obiettivi:**
+- Manipolare stringhe di testo
+- Lavorare con funzioni di data
+- Estrarre informazioni da codici
+
+**Dati di partenza:**
+```
+A                      B              C
+Codice Completo        Data Ordine    Cliente
+PRD-2026-001-ROSSI     15/01/2026     Mario Rossi
+PRD-2026-002-BIANCHI   18/01/2026     anna bianchi
+PRD-2026-003-VERDI     20/01/2026     LUCA VERDI
+PRD-2026-004-NERI      21/01/2026     giulia neri
+```
+
+**Compiti:**
+1. Estrai il numero d'ordine (001, 002, ecc.) dal codice nella colonna D
+2. Estrai il cognome dal codice nella colonna E
+3. Nella colonna F, formatta il nome cliente con iniziali maiuscole (Mario Rossi)
+4. Nella colonna G, calcola i giorni trascorsi dall'ordine
+5. Nella colonna H, mostra "SOLLECITO" se sono passati più di 5 giorni
+6. Crea un codice di spedizione concatenando: "SPED-" + numero ordine + "-" + prime 3 lettere cognome
+
+**Formule da utilizzare:** STRINGA.ESTRAI, MAIUSC.INIZ, OGGI, CONCATENA o &, SE
+
+---
+
+### 🎯 LIVELLO AVANZATO
+
+#### Esercitazione 7: Database Dipendenti con CERCA.VERT
+
+**Obiettivi:**
+- Utilizzare CERCA.VERT per cercare informazioni
+- Creare un sistema di lookup tra tabelle
+- Gestire errori con SE.ERRORE
+
+**Dati di partenza:**
+
+**Tabella 1 - Anagrafica Dipendenti (A:D):**
+```
+Codice  Nome           Reparto    Livello
+D001    Marco Rossi    Vendite    3
+D002    Anna Verdi     IT         4
+D003    Luca Bianchi   Vendite    2
+D004    Sara Neri      HR         3
+D005    Paolo Gialli   IT         5
+```
+
+**Tabella 2 - Livelli Retributivi (F:G):**
+```
+Livello  Stipendio Base
+1        1200
+2        1500
+3        1800
+4        2200
+5        2800
+```
+
+**Compiti:**
+1. Crea una sezione "Calcolo Stipendi" con:
+   - Colonna con codice dipendente
+   - Cerca automaticamente nome, reparto e livello
+   - Cerca lo stipendio base corrispondente al livello
+2. Aggiungi una colonna "Bonus" che calcola:
+   - 15% per reparto Vendite
+   - 10% per reparto IT
+   - 5% per altri reparti
+3. Calcola lo stipendio totale (base + bonus)
+4. Gestisci eventuali codici dipendente non trovati con SE.ERRORE
+5. Calcola il costo totale del personale per reparto
+
+**Formule da utilizzare:** CERCA.VERT, SE, SE.ERRORE, SOMMA.SE
+
+---
+
+#### Esercitazione 8: Dashboard Vendite Interattiva
+
+**Obiettivi:**
+- Creare un dashboard di riepilogo
+- Utilizzare formule complesse combinate
+- Implementare KPI (Key Performance Indicators)
+
+**Dati di partenza:**
+```
+Data        Venditore  Regione  Prodotto    Quantità  Prezzo  
+02/01/2026  Mario      Nord     Laptop      2         800
+03/01/2026  Anna       Sud      Mouse       10        25
+04/01/2026  Luca       Centro   Tastiera    5         45
+05/01/2026  Mario      Nord     Monitor     3         350
+06/01/2026  Sara       Sud      Laptop      1         800
+...(continua con almeno 20 righe)
+```
+
+**Compiti:**
+1. Crea una sezione "KPI GENERALI":
+   - Totale vendite (importo)
+   - Numero totale ordini
+   - Valore medio ordine
+   - Prodotto più venduto
+   - Regione con più vendite
+2. Crea una tabella "Performance Venditori":
+   - Elenco venditori unici
+   - Totale vendite per venditore
+   - Numero ordini per venditore
+   - Media per ordine
+   - Ranking (1° migliore venditore, ecc.)
+3. Crea una tabella "Analisi per Regione":
+   - Totale vendite per regione
+   - Percentuale sul totale
+   - Numero ordini per regione
+4. Aggiungi calcoli temporali:
+   - Vendite settimanali
+   - Crescita rispetto alla settimana precedente
+5. Implementa un sistema di "Target":
+   - Target mensile: 50.000€
+   - Percentuale raggiungimento
+   - Proiezione fine mese
+
+**Formule da utilizzare:** SOMMA.SE, CONTA.SE, MEDIA.SE, MAX, CERCA.VERT, UNIQUE (Google Fogli), PERCENTUALE
+
+---
+
+#### Esercitazione 9: Sistema di Prenotazioni
+
+**Obiettivi:**
+- Gestire disponibilità e prenotazioni
+- Utilizzare logica complessa con SE annidati
+- Validazione automatica dei dati
+
+**Dati di partenza:**
+
+**Tabella Camere:**
+```
+Camera  Tipo      Posti  Prezzo/Notte
+101     Singola   1      80
+102     Doppia    2      120
+103     Doppia    2      120
+104     Suite     4      200
+105     Singola   1      80
+```
+
+**Tabella Prenotazioni:**
+```
+ID   Camera  Check-in    Check-out   Ospiti  Nome Cliente
+1    102     20/01/2026  23/01/2026  2       Mario Rossi
+2    104     21/01/2026  25/01/2026  4       Anna Verdi
+```
+
+**Compiti:**
+1. Nella tabella prenotazioni, aggiungi colonne:
+   - Notti (calcola la differenza tra check-out e check-in)
+   - Prezzo/Notte (cerca dalla tabella camere)
+   - Totale prenotazione
+2. Aggiungi una colonna "Validazione":
+   - "OK" se numero ospiti <= posti camera
+   - "ERRORE: Troppi ospiti" altrimenti
+3. Crea una sezione "Disponibilità" che per ogni camera mostri:
+   - Se è occupata oggi
+   - Data fine occupazione
+   - Stato: "Libera" o "Occupata"
+4. Calcola statistiche:
+   - Tasso di occupazione (% camere occupate)
+   - Ricavo totale prenotazioni
+   - Ricavo medio per camera
+   - Camera più redditizia
+5. Crea un calendario settimanale che mostri la disponibilità giornaliera
+
+**Formule da utilizzare:** DATA.DIFF, CERCA.VERT, SE, E, O, CONTA.SE, SOMMA.SE
+
+---
+
+#### Esercitazione 10: Analisi Finanziaria Aziendale
+
+**Obiettivi:**
+- Creare bilancio aziendale
+- Calcolare margini e KPI finanziari
+- Analisi del punto di pareggio (break-even)
+
+**Dati di partenza:**
+
+**Costi Fissi Mensili:**
+```
+Voce           Importo
+Affitto        2000
+Stipendi       8000
+Utenze         500
+Assicurazioni  300
+Altro          200
+```
+
+**Vendite Prodotti:**
+```
+Prodotto     Prezzo Vendita  Costo Unitario  Q.tà Venduta
+Prodotto A   50              30              150
+Prodotto B   80              45              100
+Prodotto C   120             70              80
+Prodotto D   35              20              200
+```
+
+**Compiti:**
+1. Calcola per ogni prodotto:
+   - Ricavo totale
+   - Costo variabile totale
+   - Margine di contribuzione unitario
+   - Margine di contribuzione totale
+   - Margine % sul prezzo
+2. Calcola il totale:
+   - Ricavi totali
+   - Costi variabili totali
+   - Costi fissi totali
+   - Costi totali
+   - Utile/Perdita
+3. Calcola KPI:
+   - Margine di contribuzione %
+   - ROI (Return on Investment)
+   - Break-even point in unità
+   - Break-even point in valore
+4. Crea scenari "What-if":
+   - Cosa succede aumentando i prezzi del 10%?
+   - Cosa succede riducendo i costi fissi del 15%?
+   - Quante unità servono per raggiungere 5000€ di utile?
+5. Analisi prodotti:
+   - Quale prodotto è più redditizio?
+   - Quale contribuisce maggiormente all'utile?
+   - Quale ha il margine % migliore?
+
+**Formule da utilizzare:** SOMMA, operatori matematici, SE, CERCA.VERT, percentuali, formule finanziarie
+
+---
+
+### 🏆 PROGETTO FINALE COMPLETO
+
+#### Esercitazione 11: Sistema Gestionale E-commerce
+
+**Obiettivi:**
+- Integrare tutte le competenze acquisite
+- Creare un sistema multi-foglio complesso
+- Automatizzare processi aziendali
+
+**Struttura del progetto:**
+
+Il progetto deve includere minimo 5 fogli interconnessi:
+
+**FOGLIO 1 - Prodotti (Catalogo):**
+```
+Codice  Nome           Categoria  Prezzo  Giacenza  Minimo  Fornitore
+```
+
+**FOGLIO 2 - Ordini Clienti:**
+```
+ID  Data  Cliente  Codice Prod  Quantità  Stato  Spedizione
+```
+
+**FOGLIO 3 - Clienti (Anagrafica):**
+```
+ID  Nome  Cognome  Email  Città  Sconto%  Totale Acquisti
+```
+
+**FOGLIO 4 - Dashboard:**
+Riepilogo con KPI e grafici
+
+**FOGLIO 5 - Ordini Fornitore:**
+Ordini automatici da generare per prodotti sotto scorta
+
+**Requisiti funzionali:**
+
+1. **Gestione Ordini:**
+   - Ricerca automatica prezzo prodotto
+   - Calcolo totale ordine
+   - Applicazione sconto cliente
+   - Verifica disponibilità giacenza
+   - Aggiornamento automatico giacenze
+   - Stato ordine (In lavorazione, Spedito, Consegnato)
+
+2. **Gestione Clienti:**
+   - Calcolo totale storico acquisti
+   - Categoria cliente (Bronzo <500€, Argento 500-1000€, Oro >1000€)
+   - Sconto automatico in base alla categoria
+   - Numero ordini effettuati
+
+3. **Gestione Magazzino:**
+   - Segnalazione prodotti sotto scorta minima
+   - Generazione automatica ordini a fornitori
+   - Valore magazzino totale
+   - Rotazione prodotti (velocità vendita)
+
+4. **Dashboard e Analisi:**
+   - Totale vendite giornaliere/settimanali/mensili
+   - Numero ordini per stato
+   - Prodotti più venduti (Top 5)
+   - Categorie più redditizie
+   - Trend vendite (crescita %)
+   - Clienti più importanti (Top 5 per acquisti)
+   - Tasso di riordino (% prodotti sotto minimo)
+   - Valore medio ordine
+   - Previsione vendite prossimo mese
+
+5. **Funzionalità Avanzate:**
+   - Sistema di ricerca prodotti
+   - Calcolo commissioni venditori (3% su ordini)
+   - Gestione resi (stato "Reso")
+   - Report spedizioni per corriere
+   - Alert automatici (email da inviare)
+
+**Formule richieste:**
+- CERCA.VERT per lookup tra fogli
+- SOMMA.SE e SOMMA.PIÙ.SE per aggregazioni
+- SE annidati o PIÙ.SE per logica complessa
+- CONTA.SE per conteggi condizionali
+- Funzioni di testo per formattazione
+- Funzioni di data per analisi temporali
+- FILTER e QUERY (Google Fogli) per estrarre dati
+- ARRAYFORMULA per applicare formule a intervalli
+
+**Criteri di valutazione:**
+1. Completezza (tutti i fogli implementati): 30%
+2. Correttezza formule: 30%
+3. Automazione e interconnessione fogli: 20%
+4. Usabilità e presentazione: 10%
+5. Funzionalità extra e creatività: 10%
+
+**Bonus opzionali:**
+- Formattazione condizionale per evidenziare dati
+- Grafici interattivi nella dashboard
+- Funzioni personalizzate (Google Apps Script)
+- Pulsanti per azioni automatiche
+- Sistema di login e permessi (simulato)
+
+---
+
+### 📝 Modalità di Svolgimento
+
+#### Per gli Studenti
+
+1. **Organizzazione:**
+   - Crea un nuovo Google Foglio per ogni esercitazione
+   - Rinomina il file con: "Esercitazione_X_NomeCognome"
+   - Aggiungi un foglio "Note" per documentare difficoltà o domande
+
+2. **Svolgimento:**
+   - Leggi attentamente i requisiti
+   - Inserisci i dati di partenza
+   - Risolvi un compito alla volta
+   - Testa ogni formula prima di procedere
+   - Verifica i risultati per coerenza
+
+3. **Consegna:**
+   - Condividi il foglio con l'insegnante
+   - Assicurati che le formule siano visibili (non solo i valori)
+   - Aggiungi commenti nelle celle complesse
+
+#### Per gli Insegnanti
+
+1. **Assegnazione:**
+   - Livello Base: settimane 1-2
+   - Livello Intermedio: settimane 3-4
+   - Livello Avanzato: settimane 5-7
+   - Progetto Finale: settimane 8-10
+
+2. **Supporto:**
+   - Sessioni di tutoring per dubbi
+   - Forum classe per domande comuni
+   - Video tutorial per concetti complessi
+
+3. **Valutazione:**
+   - Esercizi base: 1 punto ciascuno
+   - Esercizi intermedi: 2 punti ciascuno
+   - Esercizi avanzati: 3 punti ciascuno
+   - Progetto finale: 10 punti
+
+4. **Feedback:**
+   - Commenti diretti nel foglio Google
+   - Evidenziare errori comuni
+   - Suggerire ottimizzazioni
+
+---
+
+### 💡 Suggerimenti per il Successo
+
+1. **Non aver paura di sperimentare**: Prova diverse formule, il foglio di calcolo non si rompe!
+
+2. **Usa i riferimenti assoluti quando necessario**: Il simbolo $ è tuo amico.
+
+3. **Testa con dati semplici**: Prima di applicare formule complesse, verifica con numeri semplici.
+
+4. **Documenta il tuo lavoro**: Aggiungi note e commenti per ricordare la logica.
+
+5. **Cerca aiuto**: Usa la documentazione di Google Fogli, forum e video tutorial.
+
+6. **Pratica regolarmente**: 30 minuti al giorno sono meglio di 3 ore una volta a settimana.
+
+7. **Impara dagli errori**: Ogni errore è un'opportunità per capire meglio.
+
+8. **Condividi con i compagni**: Lavora in gruppo per discutere approcci diversi.
+
+9. **Pensa prima di scrivere**: Pianifica la formula su carta prima di digitarla.
+
+10. **Verifica sempre i risultati**: I numeri hanno senso logico?
 
 ---
 
